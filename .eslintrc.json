@@ -16,8 +16,31 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "babel-plugin-styled-components"
     ],
     "rules": {
+        "react/require-default-props": 0,
+        "import/no-named-as-default": 0,
+        "react/jsx-filename-extension": [
+            "error",
+            {
+              "extensions": [".js", ".jsx"]
+            }
+          ],
+        "react/forbid-prop-types":0,
+        "no-console": 1,
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
     }
 }
