@@ -1,12 +1,16 @@
 import React from 'react';
-import { Container, Date, Title } from './styles';
+
+import { Container, Backdrop, Header, Category, Title } from './styles';
 
 const MainHighlight = () => {
     return(
         <Container>
-            <Date>20/07/2019</Date>
-            <Title>Godzilla: King of the Monsters</Title>
-            {/* <Backdrop source={require('https://image.tmdb.org/t/p/w780/uovH5k4BAEPqXqxgwVrTtqH169g.jpg')} /> */}
+            <Backdrop source={{uri: 'https://image.tmdb.org/t/p/w780/m67smI1IIMmYzCl9axvKNULVKLr.jpg'}}>
+                <Header>
+                    <Title>Toy Story 4</Title>
+                    <Category>Category: Adventure | Animation | Comedy | Family</Category>
+                </Header>
+            </Backdrop>
         </Container>
     );
 };

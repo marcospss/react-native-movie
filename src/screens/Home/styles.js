@@ -1,8 +1,7 @@
 import styled from 'styled-components/native';
 
-import theme from './theme';
-
 export const Container = styled.View`
   flex: 1;
-  background-color: ${theme.secondaryColor}
+  align-items: flex-start;
+  flex-direction: column;
 `;
